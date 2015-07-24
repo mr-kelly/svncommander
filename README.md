@@ -4,27 +4,24 @@
 
 比如获取指定目录的库URL
 
-`
-
+```python
 >>> import SvnCommander
 >>> clientSvn = SvnCommander('path/svnpath', '../svn.exe')
 >>> clientRepoUrl = clientSvn.getRepoUrl()
 >>> print(clientRepoUrl)
 http://svnpath/trunk
 
-`
+```
 
 
 获取指定目录的Revision版本
 
-`
+```python
 >>> import SvnCommander
 >>> clientSvn = SvnCommander('path/svnpath', '../svn.exe')
 >>> revision = clientSvn.getHeadVersionNum()
 >>> print(revision)
-
 123
-
 `
 
 
